@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTHI AHOB | Utsav Accommodation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <h2>ASTHI AHOB</h2>
+                <small>UTSAV ACCOMMODATION PORTAL</small>
+            </a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#guidelines" class="nav-link">Guidelines</a>
+            <a href="admin.html" class="admin-link">Admin</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>ASTHI AHOB</h1>
+            <h3>Paramadoyal Sri Sri Thakur Anukulchandra Utsav</h3>
+            <p>Welcome to the official accommodation portal for devotees and guests attending ASTHI AHOB UTSAV. Submit your accommodation request for the Utsav.</p>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="field">
+                    <label for="familyCode">FAMILY CODE</label>
+                    <input type="text" id="familyCode" maxlength="12" placeholder="12-digit FC Code" required>
+                </div>
+                <div class="field">
+                    <label for="memberName">MEMBER NAME</label>
+                    <input type="text" id="memberName" maxlength="100" placeholder="Member name" required>
+                </div>
+                <div class="field">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNumber" inputmode="numeric" maxlength="10" placeholder="10-digit number" required>
+                </div>
+                <div class="field">
+                    <label for="guestCount">GUEST COUNT</label>
+                    <input type="number" id="guestCount" min="1" max="20" placeholder="Guests" required>
+                </div>
+                <div class="field">
+                    <label for="checkIn">CHECK-IN</label>
+                    <select id="checkIn" required>
+          <option value="">Select</option>
+          <option value="2026-11-20">20 Nov</option>
+          <option value="2026-11-21">21 Nov</option>
+          <option value="2026-11-22">22 Nov</option>
+        </select>
+                </div>
+                <div class="field">
+                    <label for="checkOut">CHECK-OUT</label>
+                    <select id="checkOut" required>
+          <option value="">Select</option>
+          <option value="2026-11-22">22 Nov</option>
+          <option value="2026-11-23">23 Nov</option>
+        </select>
+                </div>
+                <button type="submit" class="search-btn" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About ASTHI AHOB UTSAV</h2>
+                <p><b>Date - Sunday, November 22, 2026 (Bengali Date - 6th Agrahayan, 1433)</b><br>
+                    <b>Venue - Batanagar Newland adjacent field.</b><br><br> With the blessings of His Holiness Parampujyapada Sri Sri Acharyadev and the divine inspiration of His Holiness Parampujoniyo Abindada. we, the good friends of Alipore Subdistrict,
+                    have undertaken to organize the 'Asti-Ahab' festival on the occasion of the auspicious 139th birth anniversary of the most beloved Sri Sri Thakur Anukulchandra on Sunday, November 22nd, at the field adjacent to New Land, Batanagar.<br>                    Let us gather together on this great festival of Amritvarshi, be illuminated by the infinite blessings of the Supreme Being, and become successful in everything we do. Vande Purushottamam.<br> <b>Program Following - </b>Nahvat and
+                    Vedamangaliki. Ushakirtan. Morning prayer, chanting of names, and reading books. Then the next meal. Devotional music, bhajans, kirtans and Ishta discussions are held periodically throughout the day. Distribution of fruits in local
+                    hospitals. All-day medical services. Providing legal advice. Providing educational advice to students by experienced educators. vandara at afternoon. Evening preyar and thakur books read. Then: cultural variety show. Announcement ending
+                    of the festival.</p>
+            </div>
+            <div class="about-content">
+                <p>A peaceful accommodation experience for Utsav participants.<br> ASTHI AHOB is a spiritual Utsav associated with Sri Sri Thakur Anukulchandra. This accommodation portal has been created to help devotees, families and guests find suitable
+                    accommodation during the Utsav.</p>
+                <p>Our purpose is to provide a simple and organized system for accommodation booking, room availability and stay management.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="guidelines" id="guidelines">
+        <div class="container">
+            <div class="section-title">
+                <h2>Booking Guidelines</h2>
+                <p>Please follow the accommodation guidelines during ASTHI AHABOHA.</p>
+            </div>
+            <div class="guideline-grid">
+                <div class="guideline">
+                    <h3>🙏 Registration</h3>
+                    <p>Please provide correct guest information while submitting your accommodation request.</p>
+                </div>
+                <div class="guideline">
+                    <h3>🏠 Peaceful Stay</h3>
+                    <p>All guests are requested to maintain cleanliness, discipline and a peaceful environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>ASTHI AHOB UTSAV</h3>
+        <p>Sri Sri Thakur Anukulchandra Utsav Accommodation Portal</p>
+        <h4>Helpline Number & Any Accommodation Inquiry</h4>
+        <p>UPANANDA JANA - +91 9874738993</p>
+        <p>RINTU SIKHDAR - +91 9830875052</p>
+        <p>MINAKHI HALDER - +91 9073273368</p>
+        <p>MANIDIPA CHAKKRABORTY - +91 9748406036</p>
+        <p>SUMITA KOYAL - +91 7998813029</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <div class="modal" id="resultModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" id="closeModal" aria-label="Close">×</button>
+            <div id="resultContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
